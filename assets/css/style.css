@@ -1,7 +1,159 @@
-h1 {
-  font-family: "Shrikhand";
+@media screen and (max-width: 767px) {
+  h1 {
+    font-family: "Shrikhand";
+  }
+  body {
+    background-color: "#ab99ca";
+  }
+  header img {
+    display: block;
+    margin: auto;
+    height: 44px;
+  }
+  .location {
+    background-color: #d2d2d2;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+  }
+  .background {
+    background-color: #f6f6f6;
+  }
+  .entre {
+    background-color: white;
+    width: 90%;
+    height: 70px;
+    border-radius: 15px;
+    margin: auto;
+  }
+  .plat {
+    background-color: white;
+    width: 90%;
+    height: 70px;
+    border-radius: 15px;
+    margin: auto;
+  }
+  .dessert {
+    background-color: white;
+    width: 90%;
+    height: 70px;
+    border-radius: 15px;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    width: 90%;
+    height: 73px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+  }
+  .restaurants {
+    background-color: #d2d2d2;
+    margin-bottom: 30px;
+  }
+  .card {
+    margin: auto;
+  }
+  .card {
+    background-color: #FFFFFF;
+    width: 90%;
+    height: 265px;
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+  .card img {
+    height: 195px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .card_text {
+    line-height: 2px;
+    font-size: 18px;
+    margin-left: 13px;
+  }
+  .card_icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .f_text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 8%;
+  }
+  footer img {
+    height: 25px;
+  }
 }
-
-body {
-  background-color: "#ab99ca";
+@media screen and (min-width: 768px) {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  header img {
+    display: block;
+    height: 40px;
+    margin: auto;
+  }
+  .location {
+    background-color: #d2d2d2;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+  }
+  .top {
+    background-color: #f6f6f6;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+  }
+  .top h1 {
+    font-size: 40px;
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+  .top p {
+    font-size: 18px;
+    color: #353535;
+  }
+  .top a {
+    color: white;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    background: linear-gradient(to right, #9356DC, #FF79DA);
+    border-radius: 20px;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .buttonf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 322px;
+    height: 73px;
+    border-radius: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
