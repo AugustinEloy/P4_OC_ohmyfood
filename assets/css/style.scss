@@ -88,11 +88,10 @@ a{
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
 }
 .card_text{
-    line-height: 2px;
-    font-size: 18px;
-    margin-left: 13px;
+    background-color: #9356DC;
 }
 .card_icon{
     display: flex;
@@ -107,6 +106,11 @@ a{
 }
 footer img {
     height: 25px;
+}
+.heart{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
 }
 }
 @media screen and  (min-width:768px)  {
@@ -159,6 +163,9 @@ header img{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
 }
 .buttonf{
     display: flex;
@@ -170,6 +177,33 @@ header img{
     border-radius: 20px;
 
 }
+.restaurants{
+    background-color: #d2d2D2;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.card{
+    background-color: #FFFFFF;
+    height: 270px;
+    width: 490px;
+    border-radius: 15px;
+
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    display: flex;
+    text-align: center;
+}
+.card_text{
+    font-size: 18px;
+    line-height: 0px;
 }
 
- 
+}
