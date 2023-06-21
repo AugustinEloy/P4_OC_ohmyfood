@@ -72,14 +72,12 @@ a{
     background-color: #d2d2d2;
     margin-bottom: 30px;
 }
-.card{
-    margin: auto;
-}
 
-.card {
+.card {    
+    margin: auto;
     background-color: #FFFFFF;
     width: 90%;
-    height: 265px;
+    height: 275px;
     border-radius: 15px;
     margin-top: 30px;
 }
@@ -90,12 +88,13 @@ a{
     border-top-right-radius: 15px;
     object-fit: cover;
 }
-.card_text{
-    background-color: #9356DC;
-}
-.card_icon{
-    display: flex;
-    justify-content: flex-end;
+.restaurants h2 {
+    margin: 0 0 50px 0;
+  }
+  .restaurants h3, .restaurants p {
+    margin: 10px 0 0 20px;
+  }
+  .card i {
    
 }
 .f_text{
