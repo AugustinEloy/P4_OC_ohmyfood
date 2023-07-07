@@ -90,6 +90,9 @@
     left: 350px;
     bottom: 30px;
   }
+  .heart:hover {
+    background: linear-gradient(to right, #9356DC, #FF79DA);
+  }
   .f_text {
     display: flex;
     flex-direction: column;
