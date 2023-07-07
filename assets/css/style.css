@@ -85,6 +85,11 @@
   .restaurants h3, .restaurants p {
     margin: 10px 0 0 20px;
   }
+  .card i {
+    position: relative;
+    left: 350px;
+    bottom: 30px;
+  }
   .f_text {
     display: flex;
     flex-direction: column;
