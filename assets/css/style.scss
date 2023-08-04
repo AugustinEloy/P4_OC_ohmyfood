@@ -8,6 +8,42 @@ h1{
 }
 body{
     background-color: $color;
+    font-family: 'Raleway', sans-serif;
+}
+.topimg img{
+    height: 275px;
+    width: 100%;
+
+}
+.top{
+   text-align: center;
+   background-color: grey;
+}
+.top h1{
+    font-size: 24px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.top p{
+    font-size:  18px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.buttontop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    background: linear-gradient(to right, #9356DC, #FF79DA);
+    border-radius: 20px;
+    color: white;
+    transition-duration: 400ms;
+    transition-property: transform;
+}
+.buttontop:hover{
+ transform: scale(1.05);
 }
 header img{
     display: block;
@@ -18,11 +54,18 @@ header img{
     background-color: #d2d2d2;
     width: 100%;
     height: 50px;
-    align-items: center;
+    text-align: center;
 }
-
+.location i {
+    padding-top: 2%;
+}
 .background{
     background-color: #f6f6f6;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.background h2{
+    margin-left: 10px;
 }
 .entre{
  background-color: white;
@@ -30,6 +73,31 @@ header img{
  height: 70px;
  border-radius: 15px;
  margin: auto;
+ animation-name: entre;
+ animation-duration: 10s;
+ line-height: 5px;
+
+
+}
+@keyframes entre { 
+    
+    100%{ background-color: green; left: 200px; top:0px}
+    
+}
+.entre h3{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.entre p{
+    padding-left: 10px;
+}
+.line{
+    width: 40px;
+    height: 3px;
+    background-color: green;
+    margin-left: 10px;
+    
 
 }
 .plat{
@@ -38,7 +106,16 @@ header img{
  height: 70px;
  border-radius: 15px;
  margin: auto;
+ line-height: 5px;
 
+}
+.plat h3{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.plat p{
+    padding-left: 10px;
 }
 .dessert{
 background-color: white;
@@ -46,7 +123,16 @@ background-color: white;
  height: 70px;
  border-radius: 15px;
  margin: auto;
+ line-height: 5px;
 
+}
+.dessert h3{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.dessert p{
+    padding-left: 10px;
 }
 a{
     text-decoration: none;
@@ -94,14 +180,30 @@ a{
   .restaurants h3, .restaurants p {
     margin: 10px 0 0 20px;
   }
-  .card i  {
+    .heart  {
         position: relative;
-        left: 350px;
-        bottom: 30px; 
+        left: 90%;       
+        bottom: 10%;
+        background-clip: padding-box; 
+              
 }
-.heart:hover{
-    background: linear-gradient(to right, #9356DC, #FF79DA); 
-}
+    .heart:hover{
+        background-color: red;
+        
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 50px;
+        margin: auto;
+        background: linear-gradient(to right, #9356DC, #FF79DA);
+        border-radius: 20px;
+        color: white;
+        margin-top: 40px;
+        
+    }
 
 .f_text{
     display: flex;
@@ -112,13 +214,9 @@ a{
 footer img {
     height: 25px;
 }
-.heart{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 40px;
+
 }
-}
-@media screen and  (min-width:768px)  {
+@media screen and  (min-width:768px) {
 a{
     text-decoration: none;
     color: black;
@@ -133,7 +231,10 @@ header img{
     background-color: #d2d2d2;
     width: 100%;
     height: 50px;
-    align-items: center;
+   text-align: center;
+   }
+.location i{
+    padding-top: 1%;
 }
 .top{
     background-color: #f6f6f6;
@@ -153,7 +254,7 @@ header img{
 .top a{
     color:white;
 }
-.button{
+.buttontop{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,6 +298,17 @@ header img{
     width: 490px;
     border-radius: 15px;
 
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    background: linear-gradient(to right, #9356DC, #FF79DA);
+    border-radius: 20px;
+    color: white;
 }
 .card img{
     width: 100%;
