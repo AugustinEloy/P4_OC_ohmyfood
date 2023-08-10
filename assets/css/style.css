@@ -1,3 +1,13 @@
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-65px);
+    transform: translateX(-65px);
+  }
+}
 @media screen and (max-width: 767px) {
   h1 {
     font-family: "Shrikhand";
@@ -40,9 +50,6 @@
   .buttontop:hover {
     transform: scale(1.05);
   }
-  .iahsh {
-    background-color: #9356DC;
-  }
   header img {
     display: block;
     margin: auto;
@@ -72,15 +79,19 @@
     border-radius: 15px;
     margin: auto;
     animation-name: entre;
-    animation-duration: 10s;
+    animation-duration: 1s;
     line-height: 5px;
   }
-  @keyframes entre {
-    100% {
-      background-color: green;
-      left: 200px;
-      top: 0px;
-    }
+  .entre:hover {
+    animation: slide-left cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .test {
+    background-color: #99E2D0;
+    width: 20%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    left: 75%;
   }
   .entre h3 {
     font-size: 20px;
