@@ -9,6 +9,12 @@
   }
 }
 @media screen and (max-width: 767px) {
+  h2 {
+    margin-left: 3%;
+  }
+  .restaurants h2 {
+    padding-left: 3%;
+  }
   h1 {
     font-family: "Shrikhand";
   }
@@ -85,13 +91,23 @@
   .entre:hover {
     animation: slide-left cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
-  .test {
+  .test1 {
     background-color: #99E2D0;
     width: 20%;
     height: 70px;
     border-radius: 15px;
     position: absolute;
     left: 75%;
+    top: 34.8%;
+  }
+  .test2 {
+    background-color: #99E2D0;
+    width: 20%;
+    height: 70px;
+    border-radius: 15px;
+    position: absolute;
+    left: 75%;
+    top: 41.3%;
   }
   .entre h3 {
     font-size: 20px;
@@ -206,8 +222,6 @@
     margin-top: 40px;
   }
   .f_text {
-    display: flex;
-    flex-direction: column;
     margin-top: 5%;
     margin-left: 8%;
   }
