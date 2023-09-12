@@ -1,18 +1,39 @@
 $fonts:'Shrikhand';
 $color:'#ab99ca';
+$gradient:linear-gradient(to right, #9356DC, #FF79DA);
+$etiquette: white;
+$wetiquette: 90%;
 
 
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-65px);
-    transform: translateX(-65px);
-  }
+@keyframes moovel {
+    0%{ transform: scaleX(1);
+
+    }
+    100%{
+        transform: scaleX(0.80);
+        /*
+        .test1{
+            background-color: #9356DC;
+            z-index: 1;
+        }
+        .textdir{
+            background: blue;
+        }*/
+
+    }
 }
+
 @media  screen and (max-width:767px) {
+ .imgp{
+    margin-top: 30px;
+    display: flex;
+ }
+ .imgp img{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    z-index: -1;
+ }
 h2{
     margin-left: 3%;
 }
@@ -54,7 +75,7 @@ body{
     width: 50%;
     height: 50px;
     margin: auto;
-    background: linear-gradient(to right, #9356DC, #FF79DA);
+    background:$gradient ;
     border-radius: 20px;
     color: white;
     transition-duration: 400ms;
@@ -79,46 +100,55 @@ header img{
 .location i {
     padding-top: 2%;
 }
+
 .background{
-    background-color: #f6f6f6;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #F6F6F6;
+    margin-top: -50px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
 }
 .background h2{
     margin-left: 10px;
 }
-.entre{
- background-color: white;
- width: 90%;
- height: 70px;
- border-radius: 15px;
- margin: auto;
- animation-name: entre;
- animation-duration: 1s;
- line-height: 5px;
+.background h1{
+    margin-left: 20px;
+    padding-top: 30px;
+    font-size: 30px
 }
-.entre:hover{
-    animation: slide-left  cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+.entre{  
+        background-color: $etiquette;
+        width: $wetiquette;
+        height: 70px;
+        border-radius: 15px;
+        margin-left: 5%;
+        line-height: 5px;
+        cursor: pointer;
+        transition: width 1s;
+        
+}
+.entre:active{
+    width: 70%;
+}
+.hearth{
+    position: absolute;
+    top: 26.5%;
+    left: 80%;
+    font-size: 35px;
 }
 .test1{
-    background-color: #99E2D0;
-    width: 20%;
-    height: 70px;
-    border-radius: 15px;
     position: absolute;
-    left: 75%;
-    top: 34.8%;
-    
-}
-.test2{
-    background-color: #99E2D0;
-    width: 20%;
+    top: 35.5%;
+    left: 73%;
+    background-color: aqua;
     height: 70px;
-    border-radius: 15px;
-    position: absolute;
-    left: 75%;
-    top: 41.3%;
-    
+    width: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    z-index: -1;
 }
 
 
@@ -141,8 +171,8 @@ header img{
 
 }
 .plat{
- background-color: white;
- width: 90%;
+ background-color: $etiquette;
+ width: $wetiquette;
  height: 70px;
  border-radius: 15px;
  margin: auto;
@@ -158,8 +188,8 @@ header img{
     padding-left: 10px;
 }
 .dessert{
-background-color: white;
- width: 90%;
+background-color: $etiquette;
+ width: $wetiquette;
  height: 70px;
  border-radius: 15px;
  margin: auto;
@@ -238,7 +268,7 @@ a{
         width: 40%;
         height: 50px;
         margin: auto;
-        background: linear-gradient(to right, #9356DC, #FF79DA);
+        background: $gradient;
         border-radius: 20px;
         color: white;
         margin-top: 40px;
@@ -259,6 +289,83 @@ footer img {
 a{
     text-decoration: none;
     color: black;
+}
+.imgp{
+    margin-top: 30px;
+    display: flex;
+ }
+ .imgp img{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    z-index: -1;
+ }
+ .background{
+     width: 50%;
+     padding-bottom: 20px;
+     background-color: #F6F6F6;
+     margin-top: -50px;
+     border-top-left-radius: 40px;
+     border-top-right-radius: 40px;
+ }
+ .entre{  
+    background-color: $etiquette;
+    width: $wetiquette;
+    height: 70px;
+    border-radius: 15px;
+    margin-left: 5%;
+    line-height: 5px;
+    
+}
+.entre h3{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.entre p{
+    padding-left: 10px;
+}
+.plat{
+    background-color: $etiquette;
+    width: $wetiquette;
+    height: 70px;
+    border-radius: 15px;
+    margin: auto;
+    line-height: 5px;
+   
+   }
+   .plat h3{
+       font-size: 20px;
+       padding-top: 20px;
+       padding-left: 10px;
+   }
+   .plat p{
+       padding-left: 10px;
+   }
+   .dessert{
+   background-color: $etiquette;
+    width: $wetiquette;
+    height: 70px;
+    border-radius: 15px;
+    margin: auto;
+    line-height: 5px;
+   
+   }
+   .dessert h3{
+       font-size: 20px;
+       padding-top: 20px;
+       padding-left: 10px;
+   }
+   .dessert p{
+       padding-left: 10px;
+   }
+   .line{
+    width: 40px;
+    height: 3px;
+    background-color: green;
+    margin-left: 10px;
+    
+
 }
 
 header img{
@@ -300,7 +407,7 @@ header img{
     width: 20%;
     height: 50px;
     margin: auto;
-    background: linear-gradient(to right, #9356DC, #FF79DA);
+    background:$gradient;
     border-radius: 20px;
     
 }
@@ -345,7 +452,7 @@ header img{
     width: 20%;
     height: 50px;
     margin: auto;
-    background: linear-gradient(to right, #9356DC, #FF79DA);
+    background:$gradient ;
     border-radius: 20px;
     color: white;
 }
