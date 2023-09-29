@@ -3,7 +3,9 @@ $color:'#ab99ca';
 $gradient:linear-gradient(to right, #9356DC, #FF79DA);
 $etiquette: white;
 $wetiquette: 90%;
-
+$positiona:absolute;
+$positonr:relative;
+$colorg:#99E2D0;
 
 @keyframes moovel {
     0%{ transform: scaleX(1);
@@ -127,7 +129,7 @@ header img{
         margin-left: 5%;
         line-height: 5px;
         cursor: pointer;
-        transition: width 1s;
+        transition: width 0.2s;
         
 }
 .entre:active{
@@ -290,6 +292,9 @@ a{
     text-decoration: none;
     color: black;
 }
+.cards{
+    margin: auto;
+}
 .imgp{
     margin-top: 30px;
     display: flex;
@@ -300,20 +305,70 @@ a{
     object-fit: cover;
     z-index: -1;
  }
+ .restaurants h3, .restaurants p {
+    margin: 10px 0 0 20px;
+  }
+  .f_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+    .heart  {
+        position: relative;
+        left: 90%;       
+        bottom: 10%;
+        background-clip: padding-box;
+    }
+    .card .new{
+        background-color: #99E2D0;
+        font-family: "Roboto";
+        font-size: 14px;
+        width: 100px;
+        color: #008766;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: 5%;
+        right: 20px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    }
  .background{
-     width: 50%;
+     width:80%;
      padding-bottom: 20px;
      background-color: #F6F6F6;
      margin-top: -50px;
      border-top-left-radius: 40px;
      border-top-right-radius: 40px;
+     margin-left: auto;
+     margin-right: auto;
  }
+ .title{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+ }
+ 
+.hearth{
+    background-color: red;
+}
+
+.background h2{
+    padding-left: 20%;
+    
+}
+
+.prix{
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+}
  .entre{  
+    position: relative;
     background-color: $etiquette;
-    width: $wetiquette;
+    width: 60%;
     height: 70px;
     border-radius: 15px;
-    margin-left: 5%;
+    margin: auto;
     line-height: 5px;
     
 }
@@ -326,8 +381,9 @@ a{
     padding-left: 10px;
 }
 .plat{
+    position: relative;
     background-color: $etiquette;
-    width: $wetiquette;
+    width: 60%;
     height: 70px;
     border-radius: 15px;
     margin: auto;
@@ -343,8 +399,9 @@ a{
        padding-left: 10px;
    }
    .dessert{
+    position: relative;
    background-color: $etiquette;
-    width: $wetiquette;
+    width: 60%;
     height: 70px;
     border-radius: 15px;
     margin: auto;
@@ -360,10 +417,10 @@ a{
        padding-left: 10px;
    }
    .line{
-    width: 40px;
+    width: 50px;
     height: 3px;
-    background-color: green;
-    margin-left: 10px;
+    background-color: $colorg;
+    margin-left: 20%;
     
 
 }
@@ -439,6 +496,7 @@ header img{
     margin-bottom: 30px;
 }
 .card{
+    position: relative;
     background-color: #FFFFFF;
     height: 270px;
     width: 490px;
@@ -467,6 +525,23 @@ header img{
 .card_text{
     font-size: 18px;
     line-height: 0px;
+}
+.footercolumn{
+    background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.flogo{
+    position: absolute;
+    left: 90%;
+    font-family:$fonts;
+    font-style: normal;
+    
+}
+.fbutton{
+    color: white;
+    text-decoration: none;
 }
 
 }
