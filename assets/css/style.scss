@@ -7,22 +7,29 @@ $positiona:absolute;
 $positonr:relative;
 $colorg:#99E2D0;
 
-@keyframes moovel {
-    0%{ transform: scaleX(1);
-
-    }
-    100%{
-        transform: scaleX(0.80);
-        /*
-        .test1{
-            background-color: #9356DC;
-            z-index: 1;
+@keyframes moovel{
+        0% {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+          -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
         }
-        .textdir{
-            background: blue;
-        }*/
-
-    }
+        100% {
+          -webkit-transform: scaleX(0.8);
+          transform: scaleX(0.8);
+          -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+          
+        }
+      
+}
+@keyframes rotatei {
+        0%{
+            transform: rotate(Odeg);
+        }    
+        100%{
+            transform: rotate(360deg);
+        }
 }
 
 @media  screen and (max-width:767px) {
@@ -122,6 +129,7 @@ header img{
 }
 
 .entre{  
+    position: relative;
         background-color: $etiquette;
         width: $wetiquette;
         height: 70px;
@@ -143,8 +151,6 @@ header img{
 }
 .test1{
     position: absolute;
-    top: 35.5%;
-    left: 73%;
     background-color: aqua;
     height: 70px;
     width: 20%;
@@ -152,7 +158,11 @@ header img{
     border-top-right-radius: 20%;
     z-index: -1;
 }
-
+.prix{
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+}
 
 .entre h3{
     font-size: 20px;
@@ -173,6 +183,7 @@ header img{
 
 }
 .plat{
+position: relative;
  background-color: $etiquette;
  width: $wetiquette;
  height: 70px;
@@ -190,7 +201,8 @@ header img{
     padding-left: 10px;
 }
 .dessert{
-background-color: $etiquette;
+ position: relative;
+ background-color: $etiquette;
  width: $wetiquette;
  height: 70px;
  border-radius: 15px;
@@ -343,18 +355,23 @@ a{
      margin-right: auto;
  }
  .title{
+    position: relative;
     display: flex;
     justify-content: center;
     padding-top: 2%;
  }
  
-.hearth{
+ 
+.title i .heart{
     background-color: red;
+}
+.entreall{
+    position: relative;
+    z-index: 1;
 }
 
 .background h2{
     padding-left: 20%;
-    
 }
 
 .prix{
@@ -364,14 +381,50 @@ a{
 }
  .entre{  
     position: relative;
+    margin:auto;
     background-color: $etiquette;
     width: 60%;
     height: 70px;
     border-radius: 15px;
-    margin: auto;
     line-height: 5px;
+    z-index: 0;
     
 }
+.entre:hover{
+    animation-name: moovel;
+    animation-duration: 2s;
+}
+.test1{
+    position: absolute;
+    top: 0;
+    right: 20%;
+    background-color: $colorg;
+    height: 70px;
+    width: 12.5%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    z-index:-1;
+}
+.ticone{
+    background-color: white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    margin-top: 15%;
+    margin-left: 40%;
+
+}
+.ticone i{
+    color: $colorg;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.ticone:hover{
+    animation-name: rotatei;
+    animation-duration: 2s;
+}
+
+
 .entre h3{
     font-size: 20px;
     padding-top: 20px;
@@ -400,7 +453,7 @@ a{
    }
    .dessert{
     position: relative;
-   background-color: $etiquette;
+    background-color: $etiquette;
     width: 60%;
     height: 70px;
     border-radius: 15px;
@@ -509,10 +562,11 @@ header img{
     align-items: center;
     width: 20%;
     height: 50px;
-    margin: auto;
+    margin-top: 5%;
     background:$gradient ;
     border-radius: 20px;
     color: white;
+    margin-left: 40%;
 }
 .card img{
     width: 100%;
