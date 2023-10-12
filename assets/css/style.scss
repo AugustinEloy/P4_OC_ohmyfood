@@ -127,6 +127,19 @@ header img{
     padding-top: 30px;
     font-size: 30px
 }
+.card .new{
+    background-color: #99E2D0;
+    font-family: "Roboto";
+    font-size: 14px;
+    width: 100px;
+    color: #008766;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
 
 .entre{  
     position: relative;
@@ -225,25 +238,49 @@ a{
 .fonctionnement{
     display: flex;
     flex-direction: column;
+    padding-bottom: 5%;
 }
-.buttonf{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#f6f6f6 ;
-    width: 90%;
-    height: 73px;
-    margin: auto;
-    margin-top: 5%;
-    border-radius: 20px;
 
-}
 .restaurants{
     background-color: #d2d2d2;
     margin-bottom: 30px;
 }
+.buttonf{
+    margin-left:  5%;
+    margin-bottom: 5%;
+    position: relative;
+    background-color: #F6F6F6 ;
+    width: 90% ;
+    height: 73px ;
+    border-radius: 20px;
 
-.card {    
+}
+.number{
+    position: absolute;
+    background-color: purple;
+    width: 5%;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    left:-3%;
+    top: 40%;
+}
+
+.buttonf i{
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    color: grey;
+}
+
+.buttonf p{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.card {  
+    position: relative;  
     margin: auto;
     background-color: #FFFFFF;
     width: 90%;
@@ -293,8 +330,18 @@ a{
     margin-top: 5%;
     margin-left: 8%;
 }
-footer img {
-    height: 25px;
+.footercolumn{
+    background-color: #353535;
+    color: white;
+}
+.flogo{
+    margin-left: 7%;
+    font-family:$fonts;
+    font-style: normal;
+    
+}
+.f_icone{
+    margin-bottom: 4%; 
 }
 }
 
@@ -366,6 +413,14 @@ a{
     background-color: red;
 }
 .entreall{
+    position: relative;
+    z-index: 1;
+}
+.platall{
+    position: relative;
+    z-index: 1;
+}
+.dessertall{
     position: relative;
     z-index: 1;
 }
@@ -441,7 +496,12 @@ a{
     border-radius: 15px;
     margin: auto;
     line-height: 5px;
+    z-index: 0;
    
+   }
+   .plat:hover{
+    animation-duration: 2s;
+    animation-name: moovel;
    }
    .plat h3{
        font-size: 20px;
@@ -459,7 +519,12 @@ a{
     border-radius: 15px;
     margin: auto;
     line-height: 5px;
+    z-index: 0;
    
+   }
+   .dessert:hover{
+    animation-duration: 2s;
+    animation-name: moovel;
    }
    .dessert h3{
        font-size: 20px;
@@ -530,15 +595,39 @@ header img{
     margin-bottom: 40px;
 }
 .buttonf{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     background-color: #F6F6F6 ;
-    width:322px ;
+    width: 30% ;
     height: 73px ;
     border-radius: 20px;
+    text-align: center;
 
 }
+.number{
+    position: absolute;
+    background-color: purple;
+    width: 5%;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    left:-3%;
+    top: 40%;
+}
+
+.buttonf i{
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    color: grey;
+}
+
+.buttonf p{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+
 .restaurants{
     background-color: #d2d2D2;
 }
