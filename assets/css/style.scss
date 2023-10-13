@@ -143,18 +143,19 @@ header img{
 
 .entre{  
     position: relative;
-        background-color: $etiquette;
-        width: $wetiquette;
-        height: 70px;
-        border-radius: 15px;
-        margin-left: 5%;
-        line-height: 5px;
-        cursor: pointer;
-        transition: width 0.2s;
+    background-color: $etiquette;
+    width: $wetiquette;
+    height: 70px;
+    border-radius: 15px;
+    margin-left: 5%;
+    line-height: 5px;
+    z-index: 0;
         
 }
-.entre:active{
-    width: 70%;
+.entre:hover{
+    animation-name: moovel;
+    animation-duration: 2s;
+   
 }
 .hearth{
     position: absolute;
@@ -162,15 +163,40 @@ header img{
     left: 80%;
     font-size: 35px;
 }
+.entreall{
+    position: relative;
+    z-index: 1;
+}
 .test1{
     position: absolute;
-    background-color: aqua;
+    top: 0;
+    right: 12%;
+    background-color: $colorg;
     height: 70px;
-    width: 20%;
-    border-bottom-right-radius: 20%;
-    border-top-right-radius: 20%;
-    z-index: -1;
+    width: 12.5%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    z-index:-1;
 }
+.ticone{
+    background-color: white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    margin-top: 26.5%;
+    margin-left: 40%;
+
+}
+.ticone i{
+    color: $colorg;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.ticone:hover{
+    animation-name: rotatei;
+    animation-duration: 2s;
+}
+
 .prix{
     position: absolute;
     bottom: 4%;
@@ -195,15 +221,24 @@ header img{
     
 
 }
+.platall{
+        position: relative;
+        z-index: 1;
+}
 .plat{
-position: relative;
+ position: relative;
  background-color: $etiquette;
  width: $wetiquette;
  height: 70px;
  border-radius: 15px;
  margin: auto;
  line-height: 5px;
+ z-index: 0;
 
+}
+.plat:hover{
+    animation-name: moovel;
+    animation-duration: 0.5s;
 }
 .plat h3{
     font-size: 20px;
@@ -213,6 +248,10 @@ position: relative;
 .plat p{
     padding-left: 10px;
 }
+.dessertall{
+        position: relative;
+        z-index: 1;
+}
 .dessert{
  position: relative;
  background-color: $etiquette;
@@ -221,7 +260,12 @@ position: relative;
  border-radius: 15px;
  margin: auto;
  line-height: 5px;
+ z-index: 0;
 
+}
+.dessert:hover{
+    animation-duration: 2s;
+    animation-name: moovel;
 }
 .dessert h3{
     font-size: 20px;
@@ -447,7 +491,7 @@ a{
 }
 .entre:hover{
     animation-name: moovel;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
 }
 .test1{
     position: absolute;

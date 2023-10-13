@@ -126,11 +126,11 @@
     border-radius: 15px;
     margin-left: 5%;
     line-height: 5px;
-    cursor: pointer;
-    transition: width 0.2s;
+    z-index: 0;
   }
-  .entre:active {
-    width: 70%;
+  .entre:hover {
+    animation-name: moovel;
+    animation-duration: 2s;
   }
   .hearth {
     position: absolute;
@@ -138,14 +138,37 @@
     left: 80%;
     font-size: 35px;
   }
+  .entreall {
+    position: relative;
+    z-index: 1;
+  }
   .test1 {
     position: absolute;
-    background-color: aqua;
+    top: 0;
+    right: 12%;
+    background-color: #99E2D0;
     height: 70px;
-    width: 20%;
-    border-bottom-right-radius: 20%;
-    border-top-right-radius: 20%;
+    width: 12.5%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
     z-index: -1;
+  }
+  .ticone {
+    background-color: white;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    margin-top: 26.5%;
+    margin-left: 40%;
+  }
+  .ticone i {
+    color: #99E2D0;
+    margin-top: 20%;
+    margin-left: 20%;
+  }
+  .ticone:hover {
+    animation-name: rotatei;
+    animation-duration: 2s;
   }
   .prix {
     position: absolute;
@@ -166,6 +189,10 @@
     background-color: green;
     margin-left: 10px;
   }
+  .platall {
+    position: relative;
+    z-index: 1;
+  }
   .plat {
     position: relative;
     background-color: white;
@@ -174,6 +201,11 @@
     border-radius: 15px;
     margin: auto;
     line-height: 5px;
+    z-index: 0;
+  }
+  .plat:hover {
+    animation-name: moovel;
+    animation-duration: 0.5s;
   }
   .plat h3 {
     font-size: 20px;
@@ -183,6 +215,10 @@
   .plat p {
     padding-left: 10px;
   }
+  .dessertall {
+    position: relative;
+    z-index: 1;
+  }
   .dessert {
     position: relative;
     background-color: white;
@@ -191,6 +227,11 @@
     border-radius: 15px;
     margin: auto;
     line-height: 5px;
+    z-index: 0;
+  }
+  .dessert:hover {
+    animation-duration: 2s;
+    animation-name: moovel;
   }
   .dessert h3 {
     font-size: 20px;
@@ -401,7 +442,7 @@
   }
   .entre:hover {
     animation-name: moovel;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
   }
   .test1 {
     position: absolute;
