@@ -133,7 +133,7 @@
   }
   .entre:hover {
     animation-name: moovel;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
   }
   .hearth {
     position: absolute;
@@ -161,8 +161,8 @@
     border-radius: 30px;
     width: 30px;
     height: 30px;
-    margin-top: 26.5%;
-    margin-left: 40%;
+    margin-top: 30%;
+    margin-left: 25%;
   }
   .ticone i {
     color: #99E2D0;
@@ -171,7 +171,7 @@
   }
   .ticone:hover {
     animation-name: rotatei;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
   }
   .prix {
     position: absolute;
@@ -233,7 +233,7 @@
     z-index: 0;
   }
   .dessert:hover {
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-name: moovel;
   }
   .dessert h3 {
@@ -346,13 +346,9 @@
     margin-top: 4%;
     margin-left: 8%;
   }
-  .f_text1 {
-    margin-top: 4%;
+  .footercolumn p {
     margin-left: 8%;
-  }
-  .f_text2 {
     margin-top: 4%;
-    margin-left: 8%;
   }
   .footercolumn {
     background-color: #353535;
@@ -492,7 +488,7 @@
   }
   .ticone:hover {
     animation-name: rotatei;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
   }
   .entre h3 {
     font-size: 20px;
@@ -513,7 +509,7 @@
     z-index: 0;
   }
   .plat:hover {
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-name: moovel;
   }
   .plat h3 {
@@ -535,7 +531,7 @@
     z-index: 0;
   }
   .dessert:hover {
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-name: moovel;
   }
   .dessert h3 {
@@ -674,11 +670,17 @@
     line-height: 0px;
   }
   .footercolumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     background-color: #353535;
     color: white;
     position: relative;
     width: 100%;
     height: 100px;
+  }
+  .footercolumn p {
+    margin-right: 7px;
   }
   .flogo {
     position: absolute;
@@ -687,25 +689,20 @@
     font-style: normal;
     bottom: 20%;
   }
+  .footert {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20%;
+    margin-top: 40px;
+  }
   .f_icone {
-    position: absolute;
-    left: 55%;
-    bottom: 36%;
+    margin-top: 15px;
+    margin-right: 20px;
   }
   .f_icone2 {
-    position: absolute;
-    left: 40%;
-    bottom: 36%;
-  }
-  .f_text1 {
-    position: absolute;
-    left: 72%;
-    bottom: 20%;
-  }
-  .f_text2 {
-    position: absolute;
-    left: 80%;
-    bottom: 20%;
+    margin-top: 15px;
+    margin-right: 20px;
   }
   .fbutton {
     color: white;
