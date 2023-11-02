@@ -48,7 +48,8 @@ h2{
     margin-left: 3%;
 }
 .restaurants h2{
-    padding-left: 3%;
+    padding-left: 5%;
+    padding-top: 40px;
 }
     
 
@@ -190,6 +191,65 @@ header img{
     margin-left: 25%;
 
 }
+.cards2{
+    padding-bottom: 30px;
+}
+.card i{
+    opacity: 1;
+    position: absolute;
+    right: 10%;       
+    bottom: 10%;
+ 
+}
+.card i:hover{
+    opacity: 1;
+}
+.icon-hover{
+    opacity: 1;
+    position: absolute;
+    right: 10%;       
+    bottom: 10%;
+    color: white;
+ 
+}
+.icon-hover:hover {
+    opacity: 0;
+    background: -webkit-linear-gradient(#9356DC, #ff79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title{
+    position: relative;
+  }
+  .title i{
+    font-size: 20px;
+    opacity: 1;
+    position: absolute;
+    right: 10%;       
+    bottom: 10%;
+    color: white;
+ 
+}
+.title i:hover{
+    opacity: 1;
+}
+.title.icon-hover{
+    font-size: 20px;
+    opacity: 1;
+    position: absolute;
+    right: 10%;       
+    bottom: 10%;
+    color: white;
+    
+}
+.title.icon-hover:hover {
+    opacity: 0;
+    background: -webkit-linear-gradient(#9356DC, #ff79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 .ticone i{
     color: $colorg;
     margin-top: 20%;
@@ -290,6 +350,7 @@ a{
 
 .restaurants{
     background-color: #d2d2d2;
+    height: 100%;
     margin-bottom: 30px;
 }
 .buttonf{
@@ -343,23 +404,9 @@ a{
     border-top-right-radius: 15px;
     object-fit: cover;
 }
-.restaurants h2 {
-    margin: 0 0 50px 0;
-  }
   .restaurants h3, .restaurants p {
     margin: 10px 0 0 20px;
   }
-    .heart  {
-        position: absolute;
-        right: 10%;       
-        bottom: 10%;
-        background-clip: padding-box; 
-              
-}
-    .heart:hover{
-        background-color: red;
-        
-    }
     .button{
         display: flex;
         justify-content: center;
@@ -434,12 +481,6 @@ a{
     margin: 10px 0 0 20px;
   }
  
-    .heart  {
-        position: absolute;
-        right: 8%;       
-        bottom: 10%;
-        background-clip: padding-box;
-    }
     .card .new{
         background-color: #99E2D0;
         font-family: "Roboto";
@@ -463,17 +504,72 @@ a{
      margin-left: auto;
      margin-right: auto;
  }
- .title{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-top: 2%;
- }
+ .card i{
+    opacity: 1;
+    position: absolute;
+    right: 10%;       
+    bottom: 10%;
+
  
- 
-.title i .heart{
-    background-color: red;
 }
+.card i:hover{
+    opacity: 1;
+    position: absolute;
+    right: 10%;       
+    bottom: 10%;
+
+}
+.icon-hover{
+    opacity: 1;
+    position: absolute;
+    right: 10%;       
+    bottom: 10%;
+    color: white;
+
+
+ 
+}
+.icon-hover:hover {
+    opacity: 0;
+    background: -webkit-linear-gradient(#9356DC, #ff79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title{
+    position: relative;
+  }
+  .title i{
+    font-size: 20px;
+    opacity: 1;
+    position: absolute;
+    right: 30%;       
+    bottom: 10%;
+ 
+}
+.title i:hover{
+    opacity: 1;
+    color: white;
+}
+.title.icon-hover{
+    font-size: 20px;
+    opacity: 1;
+    position: absolute;
+    right: 30%;       
+    bottom: 10%;
+ 
+}
+.title.icon-hover:hover {
+    opacity: 0;
+    background: -webkit-linear-gradient(#9356DC, #ff79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title h1{
+    margin-left: 35%;
+    padding-top: 10px;
+  }
 .entreall{
     position: relative;
     z-index: 1;
@@ -693,12 +789,19 @@ header img{
 
 .restaurants{
     background-color: #d2d2D2;
+    height: 100%;
 }
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 30px;
+}
+.cards2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 3%;
+    padding-bottom: 30px
 }
 .card{
     position: relative;
